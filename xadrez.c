@@ -8,6 +8,7 @@ int main() {
     // Nível Novato - Movimentação das Peças
     int a = 0;
     int i = 0;
+    int movimentoCompleto = 1;
 
     // Implementação de Movimentação do Bispo
     // Movendo o Bispo 5 casas na diagonal para cima e à direita
@@ -30,8 +31,13 @@ int main() {
     } while (i < 8);
 
     // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    // Movendo o Cavalo 2 casas para baixo e 1 casa para esquerda
+    while (movimentoCompleto--) {
+        for(int i = 0; i < 2; i++) {
+            printf("Baixo\n"); //imprime "baixo" duas vezes
+        }
+        printf("Esquerda\n"); //imprime "esquerda" uma vez
+    }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
